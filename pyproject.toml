@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=75,<82"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "addshop-mcp"
+version = "0.9.5"
+description = "Safety-first MCP server for Addshop administration"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+  "mcp==1.30.0",
+  "httpx==0.28.1",
+  "beautifulsoup4==4.15.0",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=9.0,<10"]
+
+[project.scripts]
+addshop-mcp = "server:main"
+addshop-mcp-quality = "quality_gate:main"
+
+[tool.pytest.ini_options]
+testpaths = ["."]
+python_files = ["test_*.py"]
+addopts = "-ra"
+
+[tool.setuptools]
+py-modules = [
+  "addshop", "admin", "audit", "auditlog", "catalog", "catalog_csv",
+  "catalog_seed", "commerce", "components", "doctor", "integrations",
+  "inventory", "local_lock", "media", "media_batch", "offer_batch",
+  "offer_create_batch", "offer_csv", "offers", "operations", "policy",
+  "privacy", "product_batch_builder", "product_builder", "product_clone",
+  "product_deletion", "product_inspection", "product_validation",
+  "property_batch", "quality_gate", "readiness", "safety", "security",
+  "server", "session_store", "slug", "taxonomy", "themes",
+  "variant_matrix", "visibility"
+]

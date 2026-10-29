@@ -1,0 +1,307 @@
+{
+  "/editor/config/integration/": {
+    "status": 200,
+    "title": "Вставка HTML / JS / CSS | Addshop",
+    "forms": [
+      {
+        "method": "post",
+        "action": "https://new15676011817139.myaddshop.ru/editor/config/integration/",
+        "fields": [
+          {
+            "name": "action",
+            "type": "hidden",
+            "secret": false
+          },
+          {
+            "name": "head_html",
+            "type": "textarea",
+            "secret": false
+          },
+          {
+            "name": "body_html",
+            "type": "textarea",
+            "secret": false
+          }
+        ]
+      }
+    ],
+    "links": [
+      "/editor/config/integration/",
+      "/editor/config/integration2/"
+    ]
+  },
+  "/editor/config/integration2/": {
+    "status": 200,
+    "title": "Интеграция сервисов | Addshop",
+    "forms": [],
+    "links": [
+      "/editor/config/integration/",
+      "/editor/config/integration/ozon/",
+      "/editor/config/integration/wildberries/",
+      "/editor/config/integration/yandex_market/",
+      "/editor/config/integration/yml_import/",
+      "/editor/config/integration2/"
+    ]
+  },
+  "/editor/config/integration/ozon/": {
+    "status": 200,
+    "title": "Импорт товаров из Ozon | Addshop",
+    "forms": [
+      {
+        "method": "post",
+        "action": "https://new15676011817139.myaddshop.ru/editor/config/integration/ozon/import/",
+        "fields": [
+          {
+            "name": "ozon_client_id",
+            "type": "text",
+            "secret": false
+          },
+          {
+            "name": "ozon_api_key",
+            "type": "text",
+            "secret": true
+          },
+          {
+            "name": "ozon_import_mode",
+            "type": "radio",
+            "secret": false
+          },
+          {
+            "name": "ozon_import_mode",
+            "type": "radio",
+            "secret": false
+          }
+        ]
+      }
+    ],
+    "links": [
+      "/editor/config/integration/",
+      "/editor/config/integration/ozon/stocks/",
+      "/editor/config/integration2/"
+    ]
+  },
+  "/editor/config/integration/wildberries/": {
+    "status": 200,
+    "title": "Импорт товаров из Wildberries | Addshop",
+    "forms": [
+      {
+        "method": "post",
+        "action": "https://new15676011817139.myaddshop.ru/editor/config/integration/wildberries/import/",
+        "fields": [
+          {
+            "name": "wildberries_token",
+            "type": "text",
+            "secret": true
+          },
+          {
+            "name": "wildberries_import_mode",
+            "type": "radio",
+            "secret": false
+          },
+          {
+            "name": "wildberries_import_mode",
+            "type": "radio",
+            "secret": false
+          }
+        ]
+      }
+    ],
+    "links": [
+      "/editor/config/integration/",
+      "/editor/config/integration/wildberries/stocks/",
+      "/editor/config/integration2/"
+    ]
+  },
+  "/editor/config/integration/yandex_market/": {
+    "status": 200,
+    "title": "Яндекс Маркет (API) | Addshop",
+    "forms": [
+      {
+        "method": "post",
+        "action": "https://new15676011817139.myaddshop.ru/editor/config/integration/yandex_market/",
+        "fields": [
+          {
+            "name": "csrf_token",
+            "type": "hidden",
+            "secret": true
+          },
+          {
+            "name": "action",
+            "type": "hidden",
+            "secret": false
+          },
+          {
+            "name": "api_key",
+            "type": "password",
+            "secret": true
+          },
+          {
+            "name": "campaign_id",
+            "type": "text",
+            "secret": false
+          },
+          {
+            "name": "business_id",
+            "type": "text",
+            "secret": false
+          },
+          {
+            "name": "stocks_enabled",
+            "type": "checkbox",
+            "secret": false
+          },
+          {
+            "name": "prices_enabled",
+            "type": "checkbox",
+            "secret": false
+          },
+          {
+            "name": "orders_enabled",
+            "type": "checkbox",
+            "secret": false
+          }
+        ]
+      }
+    ],
+    "links": [
+      "/editor/config/integration/",
+      "/editor/config/integration2/"
+    ]
+  },
+  "/editor/config/integration/yml_import/": {
+    "status": 200,
+    "title": "Импорт товаров по YML-фиду | Addshop",
+    "forms": [
+      {
+        "method": "post",
+        "action": "https://new15676011817139.myaddshop.ru/editor/config/integration/yml_import/import/",
+        "fields": [
+          {
+            "name": "csrf_token",
+            "type": "hidden",
+            "secret": true
+          },
+          {
+            "name": "yml_url",
+            "type": "url",
+            "secret": false
+          },
+          {
+            "name": "yml_import_mode",
+            "type": "radio",
+            "secret": false
+          },
+          {
+            "name": "yml_import_mode",
+            "type": "radio",
+            "secret": false
+          }
+        ]
+      }
+    ],
+    "links": [
+      "/editor/config/integration/",
+      "/editor/config/integration2/"
+    ]
+  },
+  "/editor/config/integration/ozon/stocks/": {
+    "status": 200,
+    "title": "Остатки на Ozon | Addshop",
+    "forms": [],
+    "links": [
+      "/editor/config/integration/",
+      "/editor/config/integration/ozon/",
+      "/editor/config/integration2/"
+    ]
+  },
+  "/editor/config/integration/wildberries/stocks/": {
+    "status": 200,
+    "title": "Остатки на Wildberries | Addshop",
+    "forms": [
+      {
+        "method": "post",
+        "action": "https://new15676011817139.myaddshop.ru/editor/config/integration/wildberries/stocks/",
+        "fields": [
+          {
+            "name": "csrf_token",
+            "type": "hidden",
+            "secret": true
+          },
+          {
+            "name": "action",
+            "type": "hidden",
+            "secret": false
+          },
+          {
+            "name": "warehouse_id",
+            "type": "select",
+            "secret": false
+          },
+          {
+            "name": "stock_sync_enabled",
+            "type": "checkbox",
+            "secret": false
+          }
+        ]
+      },
+      {
+        "method": "post",
+        "action": "https://new15676011817139.myaddshop.ru/editor/config/integration/wildberries/stocks/",
+        "fields": [
+          {
+            "name": "csrf_token",
+            "type": "hidden",
+            "secret": true
+          },
+          {
+            "name": "action",
+            "type": "hidden",
+            "secret": false
+          }
+        ]
+      },
+      {
+        "method": "post",
+        "action": "https://new15676011817139.myaddshop.ru/editor/config/integration/wildberries/stocks/",
+        "fields": [
+          {
+            "name": "csrf_token",
+            "type": "hidden",
+            "secret": true
+          },
+          {
+            "name": "action",
+            "type": "hidden",
+            "secret": false
+          },
+          {
+            "name": "orders_enabled",
+            "type": "checkbox",
+            "secret": false
+          }
+        ]
+      },
+      {
+        "method": "post",
+        "action": "https://new15676011817139.myaddshop.ru/editor/config/integration/wildberries/stocks/",
+        "fields": [
+          {
+            "name": "csrf_token",
+            "type": "hidden",
+            "secret": true
+          },
+          {
+            "name": "action",
+            "type": "hidden",
+            "secret": false
+          }
+        ]
+      }
+    ],
+    "links": [
+      "/editor/config/integration/",
+      "/editor/config/integration/wildberries/",
+      "/editor/config/integration2/"
+    ]
+  }
+}
